@@ -9,10 +9,10 @@ public class Cloud implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Cloud ID")
+   @org.kie.api.definition.type.Label("Cloud ID")
    private java.lang.Long cloudId;
-   @org.kie.api.definition.type.Label(value = "Stanje korisnika ID")
-   private java.lang.Long stanjeKorisnikaId;
+   @org.kie.api.definition.type.Label(value = "Izvjestaj ID")
+   private java.lang.Long izvjestajId;
 
    public Cloud()
    {
@@ -28,20 +28,20 @@ public class Cloud implements java.io.Serializable
       this.cloudId = cloudId;
    }
 
-   public java.lang.Long getStanjeKorisnikaId()
+   public java.lang.Long getIzvjestajId()
    {
-      return this.stanjeKorisnikaId;
+      return this.izvjestajId;
    }
 
-   public void setStanjeKorisnikaId(java.lang.Long stanjeKorisnikaId)
+   public void setIzvjestajId(java.lang.Long izvjestajId)
    {
-      this.stanjeKorisnikaId = stanjeKorisnikaId;
+      this.izvjestajId = izvjestajId;
    }
 
-   public Cloud(java.lang.Long cloudId, java.lang.Long stanjeKorisnikaId)
+   public Cloud(java.lang.Long cloudId, java.lang.Long izvjestajId)
    {
       this.cloudId = cloudId;
-      this.stanjeKorisnikaId = stanjeKorisnikaId;
+      this.izvjestajId = izvjestajId;
    }
 
 }
