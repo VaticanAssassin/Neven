@@ -9,10 +9,13 @@ public class Odluka implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Odluka ID")
+   @org.kie.api.definition.type.Label("Odluka ID")
    private java.lang.Long odlukaid;
-   @org.kie.api.definition.type.Label(value = "Mozdani valovi ID")
-   private java.lang.Long mozdaniValoviId;
+   @org.kie.api.definition.type.Label(value = "Odluka")
+   private java.lang.Boolean odluka;
+
+   @org.kie.api.definition.type.Label(value = "Stanje korisnika ID")
+   private java.lang.Long stanjeKorisnikaId;
 
    public Odluka()
    {
@@ -28,20 +31,32 @@ public class Odluka implements java.io.Serializable
       this.odlukaid = odlukaid;
    }
 
-   public java.lang.Long getMozdaniValoviId()
+   public java.lang.Boolean getOdluka()
    {
-      return this.mozdaniValoviId;
+      return this.odluka;
    }
 
-   public void setMozdaniValoviId(java.lang.Long mozdaniValoviId)
+   public void setOdluka(java.lang.Boolean odluka)
    {
-      this.mozdaniValoviId = mozdaniValoviId;
+      this.odluka = odluka;
    }
 
-   public Odluka(java.lang.Long odlukaid, java.lang.Long mozdaniValoviId)
+   public java.lang.Long getStanjeKorisnikaId()
+   {
+      return this.stanjeKorisnikaId;
+   }
+
+   public void setStanjeKorisnikaId(java.lang.Long stanjeKorisnikaId)
+   {
+      this.stanjeKorisnikaId = stanjeKorisnikaId;
+   }
+
+   public Odluka(java.lang.Long odlukaid, java.lang.Boolean odluka,
+         java.lang.Long stanjeKorisnikaId)
    {
       this.odlukaid = odlukaid;
-      this.mozdaniValoviId = mozdaniValoviId;
+      this.odluka = odluka;
+      this.stanjeKorisnikaId = stanjeKorisnikaId;
    }
 
 }
