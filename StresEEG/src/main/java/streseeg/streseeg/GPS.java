@@ -9,23 +9,13 @@ public class GPS implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "GPS Lokacija ID")
-   private java.lang.Long gpsLokacijaId;
-   @org.kie.api.definition.type.Label(value = "Lokacija")
+   @org.kie.api.definition.type.Label("GPS Lokacija ID")
+   private Integer gpsLokacijaId;
+   @org.kie.api.definition.type.Label("Lokacija")
    private java.lang.String lokacija;
 
    public GPS()
    {
-   }
-
-   public java.lang.Long getGpsLokacijaId()
-   {
-      return this.gpsLokacijaId;
-   }
-
-   public void setGpsLokacijaId(java.lang.Long gpsLokacijaId)
-   {
-      this.gpsLokacijaId = gpsLokacijaId;
    }
 
    public java.lang.String getLokacija()
@@ -38,7 +28,17 @@ public class GPS implements java.io.Serializable
       this.lokacija = lokacija;
    }
 
-   public GPS(java.lang.Long gpsLokacijaId, java.lang.String lokacija)
+   public java.lang.Integer getGpsLokacijaId()
+   {
+      return this.gpsLokacijaId;
+   }
+
+   public void setGpsLokacijaId(java.lang.Integer gpsLokacijaId)
+   {
+      this.gpsLokacijaId = gpsLokacijaId;
+   }
+
+   public GPS(java.lang.Integer gpsLokacijaId, java.lang.String lokacija)
    {
       this.gpsLokacijaId = gpsLokacijaId;
       this.lokacija = lokacija;
