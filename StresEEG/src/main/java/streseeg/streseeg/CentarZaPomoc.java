@@ -9,10 +9,12 @@ public class CentarZaPomoc implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Centar pomoci ID")
+   @org.kie.api.definition.type.Label("Centar pomoci ID")
    private java.lang.Long centarPomociId;
-   @org.kie.api.definition.type.Label(value = "Broj Telefona")
+   @org.kie.api.definition.type.Label("Broj Telefona")
    private java.lang.String brojTelefona;
+
+   private streseeg.streseeg.HitnaPomoc emergencyId_fk;
 
    public CentarZaPomoc()
    {
@@ -38,11 +40,23 @@ public class CentarZaPomoc implements java.io.Serializable
       this.brojTelefona = brojTelefona;
    }
 
+   public streseeg.streseeg.HitnaPomoc getEmergencyId_fk()
+   {
+      return this.emergencyId_fk;
+   }
+
+   public void setEmergencyId_fk(streseeg.streseeg.HitnaPomoc emergencyId_fk)
+   {
+      this.emergencyId_fk = emergencyId_fk;
+   }
+
    public CentarZaPomoc(java.lang.Long centarPomociId,
-         java.lang.String brojTelefona)
+         java.lang.String brojTelefona,
+         streseeg.streseeg.HitnaPomoc emergencyId_fk)
    {
       this.centarPomociId = centarPomociId;
       this.brojTelefona = brojTelefona;
+      this.emergencyId_fk = emergencyId_fk;
    }
 
 }
