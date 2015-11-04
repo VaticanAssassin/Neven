@@ -10,40 +10,40 @@ public class Izvjestaj implements java.io.Serializable
    static final long serialVersionUID = 1L;
 
    @org.kie.api.definition.type.Label("Izvjestaj ID")
-   private java.lang.Long izvjestajId;
-   @org.kie.api.definition.type.Label("Stanje korisnika ID")
-   private StanjeKorisnika stanjeKorisnikaId;
+   private Integer izvjestajId;
+   @org.kie.api.definition.type.Label(value = "Stanje korisnika FK")
+   private streseeg.streseeg.StanjeKorisnika stanjeKorisnika_fk;
 
    public Izvjestaj()
    {
    }
 
-   public java.lang.Long getIzvjestajId()
+   public java.lang.Integer getIzvjestajId()
    {
       return this.izvjestajId;
    }
 
-   public void setIzvjestajId(java.lang.Long izvjestajId)
+   public void setIzvjestajId(java.lang.Integer izvjestajId)
    {
       this.izvjestajId = izvjestajId;
    }
 
-   public streseeg.streseeg.StanjeKorisnika getStanjeKorisnikaId()
+   public streseeg.streseeg.StanjeKorisnika getStanjeKorisnika_fk()
    {
-      return this.stanjeKorisnikaId;
+      return this.stanjeKorisnika_fk;
    }
 
-   public void setStanjeKorisnikaId(
-         streseeg.streseeg.StanjeKorisnika stanjeKorisnikaId)
+   public void setStanjeKorisnika_fk(
+         streseeg.streseeg.StanjeKorisnika stanjeKorisnika_fk)
    {
-      this.stanjeKorisnikaId = stanjeKorisnikaId;
+      this.stanjeKorisnika_fk = stanjeKorisnika_fk;
    }
 
-   public Izvjestaj(java.lang.Long izvjestajId,
-         streseeg.streseeg.StanjeKorisnika stanjeKorisnikaId)
+   public Izvjestaj(java.lang.Integer izvjestajId,
+         streseeg.streseeg.StanjeKorisnika stanjeKorisnika_fk)
    {
       this.izvjestajId = izvjestajId;
-      this.stanjeKorisnikaId = stanjeKorisnikaId;
+      this.stanjeKorisnika_fk = stanjeKorisnika_fk;
    }
 
 }
