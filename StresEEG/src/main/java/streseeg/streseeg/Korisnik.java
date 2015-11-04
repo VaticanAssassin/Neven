@@ -20,7 +20,7 @@ public class Korisnik implements java.io.Serializable
    @org.kie.api.definition.type.Label("Lozinka")
    private java.lang.String lozinka;
    @org.kie.api.definition.type.Label("Godine")
-   private java.lang.Integer godine;
+   private int godine;
    @org.kie.api.definition.type.Label("Spol")
    private java.lang.String spol;
 
@@ -68,16 +68,6 @@ public class Korisnik implements java.io.Serializable
       this.lozinka = lozinka;
    }
 
-   public java.lang.Integer getGodine()
-   {
-      return this.godine;
-   }
-
-   public void setGodine(java.lang.Integer godine)
-   {
-      this.godine = godine;
-   }
-
    public java.lang.String getSpol()
    {
       return this.spol;
@@ -98,10 +88,19 @@ public class Korisnik implements java.io.Serializable
       this.korisnikId = korisnikId;
    }
 
+   public int getGodine()
+   {
+      return this.godine;
+   }
+
+   public void setGodine(int godine)
+   {
+      this.godine = godine;
+   }
+
    public Korisnik(java.lang.Integer korisnikId, java.lang.String ime,
          java.lang.String prezime, java.lang.String korisnickoIme,
-         java.lang.String lozinka, java.lang.Integer godine,
-         java.lang.String spol)
+         java.lang.String lozinka, int godine, java.lang.String spol)
    {
       this.korisnikId = korisnikId;
       this.ime = ime;
