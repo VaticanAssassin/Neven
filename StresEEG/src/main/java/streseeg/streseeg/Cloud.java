@@ -11,8 +11,8 @@ public class Cloud implements java.io.Serializable
 
    @org.kie.api.definition.type.Label("Cloud ID")
    private java.lang.Long cloudId;
-   @org.kie.api.definition.type.Label(value = "Izvjestaj ID")
-   private java.lang.Long izvjestajId;
+   @org.kie.api.definition.type.Label(value = "Izvjestaj FK")
+   private streseeg.streseeg.Izvjestaj izvjestaj_fk;
 
    public Cloud()
    {
@@ -28,20 +28,20 @@ public class Cloud implements java.io.Serializable
       this.cloudId = cloudId;
    }
 
-   public java.lang.Long getIzvjestajId()
+   public streseeg.streseeg.Izvjestaj getIzvjestaj_fk()
    {
-      return this.izvjestajId;
+      return this.izvjestaj_fk;
    }
 
-   public void setIzvjestajId(java.lang.Long izvjestajId)
+   public void setIzvjestaj_fk(streseeg.streseeg.Izvjestaj izvjestaj_fk)
    {
-      this.izvjestajId = izvjestajId;
+      this.izvjestaj_fk = izvjestaj_fk;
    }
 
-   public Cloud(java.lang.Long cloudId, java.lang.Long izvjestajId)
+   public Cloud(java.lang.Long cloudId, streseeg.streseeg.Izvjestaj izvjestaj_fk)
    {
       this.cloudId = cloudId;
-      this.izvjestajId = izvjestajId;
+      this.izvjestaj_fk = izvjestaj_fk;
    }
 
 }
