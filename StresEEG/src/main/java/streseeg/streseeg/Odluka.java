@@ -10,25 +10,15 @@ public class Odluka implements java.io.Serializable
    static final long serialVersionUID = 1L;
 
    @org.kie.api.definition.type.Label("Odluka ID")
-   private java.lang.Long odlukaid;
-   @org.kie.api.definition.type.Label(value = "Odluka")
+   private Integer odlukaid;
+   @org.kie.api.definition.type.Label("Odluka")
    private java.lang.Boolean odluka;
 
-   @org.kie.api.definition.type.Label(value = "Stanje korisnika ID")
-   private java.lang.Long stanjeKorisnikaId;
+   @org.kie.api.definition.type.Label(value = "Stanje korisnika FK")
+   private streseeg.streseeg.StanjeKorisnika stanjeKorisnika_fk;
 
    public Odluka()
    {
-   }
-
-   public java.lang.Long getOdlukaid()
-   {
-      return this.odlukaid;
-   }
-
-   public void setOdlukaid(java.lang.Long odlukaid)
-   {
-      this.odlukaid = odlukaid;
    }
 
    public java.lang.Boolean getOdluka()
@@ -41,22 +31,33 @@ public class Odluka implements java.io.Serializable
       this.odluka = odluka;
    }
 
-   public java.lang.Long getStanjeKorisnikaId()
+   public java.lang.Integer getOdlukaid()
    {
-      return this.stanjeKorisnikaId;
+      return this.odlukaid;
    }
 
-   public void setStanjeKorisnikaId(java.lang.Long stanjeKorisnikaId)
+   public void setOdlukaid(java.lang.Integer odlukaid)
    {
-      this.stanjeKorisnikaId = stanjeKorisnikaId;
+      this.odlukaid = odlukaid;
    }
 
-   public Odluka(java.lang.Long odlukaid, java.lang.Boolean odluka,
-         java.lang.Long stanjeKorisnikaId)
+   public streseeg.streseeg.StanjeKorisnika getStanjeKorisnika_fk()
+   {
+      return this.stanjeKorisnika_fk;
+   }
+
+   public void setStanjeKorisnika_fk(
+         streseeg.streseeg.StanjeKorisnika stanjeKorisnika_fk)
+   {
+      this.stanjeKorisnika_fk = stanjeKorisnika_fk;
+   }
+
+   public Odluka(java.lang.Integer odlukaid, java.lang.Boolean odluka,
+         streseeg.streseeg.StanjeKorisnika stanjeKorisnika_fk)
    {
       this.odlukaid = odlukaid;
       this.odluka = odluka;
-      this.stanjeKorisnikaId = stanjeKorisnikaId;
+      this.stanjeKorisnika_fk = stanjeKorisnika_fk;
    }
 
 }
