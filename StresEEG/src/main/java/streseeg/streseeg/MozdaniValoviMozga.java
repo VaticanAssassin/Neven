@@ -14,8 +14,8 @@ public class MozdaniValoviMozga implements java.io.Serializable
    @org.kie.api.definition.type.Label("Vrijednost vala")
    private java.lang.Integer vrijednostVala;
 
-   @org.kie.api.definition.type.Label(value = "Mozdani valovi ID")
-   private java.lang.Long mozdaniValoviId;
+   @org.kie.api.definition.type.Label("Mozdani valovi ID")
+   private Integer mozdaniValoviId;
 
    public MozdaniValoviMozga()
    {
@@ -41,18 +41,18 @@ public class MozdaniValoviMozga implements java.io.Serializable
       this.vrijednostVala = vrijednostVala;
    }
 
-   public java.lang.Long getMozdaniValoviId()
+   public java.lang.Integer getMozdaniValoviId()
    {
       return this.mozdaniValoviId;
    }
 
-   public void setMozdaniValoviId(java.lang.Long mozdaniValoviId)
+   public void setMozdaniValoviId(java.lang.Integer mozdaniValoviId)
    {
       this.mozdaniValoviId = mozdaniValoviId;
    }
 
    public MozdaniValoviMozga(java.lang.String vrstaVala,
-         java.lang.Integer vrijednostVala, java.lang.Long mozdaniValoviId)
+         java.lang.Integer vrijednostVala, java.lang.Integer mozdaniValoviId)
    {
       this.vrstaVala = vrstaVala;
       this.vrijednostVala = vrijednostVala;
