@@ -9,33 +9,23 @@ public class Korisnik implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Korisnik ID")
-   private java.lang.Long korisnikId;
-   @org.kie.api.definition.type.Label(value = "Ime")
+   @org.kie.api.definition.type.Label("Korisnik ID")
+   private Integer korisnikId;
+   @org.kie.api.definition.type.Label("Ime")
    private java.lang.String ime;
-   @org.kie.api.definition.type.Label(value = "Prezime")
+   @org.kie.api.definition.type.Label("Prezime")
    private java.lang.String prezime;
-   @org.kie.api.definition.type.Label(value = "Korisnicko ime")
+   @org.kie.api.definition.type.Label("Korisnicko ime")
    private java.lang.String korisnickoIme;
-   @org.kie.api.definition.type.Label(value = "Lozinka")
+   @org.kie.api.definition.type.Label("Lozinka")
    private java.lang.String lozinka;
-   @org.kie.api.definition.type.Label(value = "Godine")
+   @org.kie.api.definition.type.Label("Godine")
    private java.lang.Integer godine;
-   @org.kie.api.definition.type.Label(value = "Spol")
+   @org.kie.api.definition.type.Label("Spol")
    private java.lang.String spol;
 
    public Korisnik()
    {
-   }
-
-   public java.lang.Long getKorisnikId()
-   {
-      return this.korisnikId;
-   }
-
-   public void setKorisnikId(java.lang.Long korisnikId)
-   {
-      this.korisnikId = korisnikId;
    }
 
    public java.lang.String getIme()
@@ -98,7 +88,17 @@ public class Korisnik implements java.io.Serializable
       this.spol = spol;
    }
 
-   public Korisnik(java.lang.Long korisnikId, java.lang.String ime,
+   public java.lang.Integer getKorisnikId()
+   {
+      return this.korisnikId;
+   }
+
+   public void setKorisnikId(java.lang.Integer korisnikId)
+   {
+      this.korisnikId = korisnikId;
+   }
+
+   public Korisnik(java.lang.Integer korisnikId, java.lang.String ime,
          java.lang.String prezime, java.lang.String korisnickoIme,
          java.lang.String lozinka, java.lang.Integer godine,
          java.lang.String spol)
