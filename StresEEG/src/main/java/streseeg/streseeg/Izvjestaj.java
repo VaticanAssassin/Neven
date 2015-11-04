@@ -9,10 +9,10 @@ public class Izvjestaj implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Izvjestaj ID")
+   @org.kie.api.definition.type.Label("Izvjestaj ID")
    private java.lang.Long izvjestajId;
-   @org.kie.api.definition.type.Label(value = "Stanje korisnika ID")
-   private java.lang.Long stanjeKorisnikaId;
+   @org.kie.api.definition.type.Label("Stanje korisnika ID")
+   private StanjeKorisnika stanjeKorisnikaId;
 
    public Izvjestaj()
    {
@@ -28,18 +28,19 @@ public class Izvjestaj implements java.io.Serializable
       this.izvjestajId = izvjestajId;
    }
 
-   public java.lang.Long getStanjeKorisnikaId()
+   public streseeg.streseeg.StanjeKorisnika getStanjeKorisnikaId()
    {
       return this.stanjeKorisnikaId;
    }
 
-   public void setStanjeKorisnikaId(java.lang.Long stanjeKorisnikaId)
+   public void setStanjeKorisnikaId(
+         streseeg.streseeg.StanjeKorisnika stanjeKorisnikaId)
    {
       this.stanjeKorisnikaId = stanjeKorisnikaId;
    }
 
    public Izvjestaj(java.lang.Long izvjestajId,
-         java.lang.Long stanjeKorisnikaId)
+         streseeg.streseeg.StanjeKorisnika stanjeKorisnikaId)
    {
       this.izvjestajId = izvjestajId;
       this.stanjeKorisnikaId = stanjeKorisnikaId;
