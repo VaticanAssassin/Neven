@@ -14,6 +14,7 @@ public class CentarZaPomoc implements java.io.Serializable
    @org.kie.api.definition.type.Label("Broj Telefona")
    private java.lang.String brojTelefona;
 
+   @org.kie.api.definition.type.Label("Hitnost")
    private streseeg.streseeg.HitnaPomoc emergencyId_fk;
 
    public CentarZaPomoc()
