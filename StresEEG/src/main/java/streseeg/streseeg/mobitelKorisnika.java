@@ -9,40 +9,40 @@ public class mobitelKorisnika implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Mobitel ID")
-   private java.lang.Long mobitelId;
-   @org.kie.api.definition.type.Label(value = "Broj mobitela ID")
-   private java.lang.String brojMobitelaId;
+   @org.kie.api.definition.type.Label("Mobitel ID")
+   private Integer mobitelId;
+   @org.kie.api.definition.type.Label(value = "Broj mobitela")
+   private java.lang.String brojMobitela;
 
    public mobitelKorisnika()
    {
    }
 
-   public java.lang.Long getMobitelId()
+   public java.lang.Integer getMobitelId()
    {
       return this.mobitelId;
    }
 
-   public void setMobitelId(java.lang.Long mobitelId)
+   public void setMobitelId(java.lang.Integer mobitelId)
    {
       this.mobitelId = mobitelId;
    }
 
-   public java.lang.String getBrojMobitelaId()
+   public java.lang.String getBrojMobitela()
    {
-      return this.brojMobitelaId;
+      return this.brojMobitela;
    }
 
-   public void setBrojMobitelaId(java.lang.String brojMobitelaId)
+   public void setBrojMobitela(java.lang.String brojMobitela)
    {
-      this.brojMobitelaId = brojMobitelaId;
+      this.brojMobitela = brojMobitela;
    }
 
-   public mobitelKorisnika(java.lang.Long mobitelId,
-         java.lang.String brojMobitelaId)
+   public mobitelKorisnika(java.lang.Integer mobitelId,
+         java.lang.String brojMobitela)
    {
       this.mobitelId = mobitelId;
-      this.brojMobitelaId = brojMobitelaId;
+      this.brojMobitela = brojMobitela;
    }
 
 }
