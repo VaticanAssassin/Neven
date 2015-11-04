@@ -9,40 +9,41 @@ public class StanjeKorisnika implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Stanje korisnika ID")
-   private java.lang.Long stanjeKorisnikaId;
-   @org.kie.api.definition.type.Label(value = "Mozdani valovi ID")
-   private java.lang.Long mozdaniValoviId;
+   @org.kie.api.definition.type.Label("Stanje korisnika ID")
+   private Integer stanjeKorisnikaId;
+   @org.kie.api.definition.type.Label(value = "Mozdani valovi FK")
+   private streseeg.streseeg.MozdaniValoviMozga mozdaniValovi_fk;
 
    public StanjeKorisnika()
    {
    }
 
-   public java.lang.Long getStanjeKorisnikaId()
+   public java.lang.Integer getStanjeKorisnikaId()
    {
       return this.stanjeKorisnikaId;
    }
 
-   public void setStanjeKorisnikaId(java.lang.Long stanjeKorisnikaId)
+   public void setStanjeKorisnikaId(java.lang.Integer stanjeKorisnikaId)
    {
       this.stanjeKorisnikaId = stanjeKorisnikaId;
    }
 
-   public java.lang.Long getMozdaniValoviId()
+   public streseeg.streseeg.MozdaniValoviMozga getMozdaniValovi_fk()
    {
-      return this.mozdaniValoviId;
+      return this.mozdaniValovi_fk;
    }
 
-   public void setMozdaniValoviId(java.lang.Long mozdaniValoviId)
+   public void setMozdaniValovi_fk(
+         streseeg.streseeg.MozdaniValoviMozga mozdaniValovi_fk)
    {
-      this.mozdaniValoviId = mozdaniValoviId;
+      this.mozdaniValovi_fk = mozdaniValovi_fk;
    }
 
-   public StanjeKorisnika(java.lang.Long stanjeKorisnikaId,
-         java.lang.Long mozdaniValoviId)
+   public StanjeKorisnika(java.lang.Integer stanjeKorisnikaId,
+         streseeg.streseeg.MozdaniValoviMozga mozdaniValovi_fk)
    {
       this.stanjeKorisnikaId = stanjeKorisnikaId;
-      this.mozdaniValoviId = mozdaniValoviId;
+      this.mozdaniValovi_fk = mozdaniValovi_fk;
    }
 
 }
