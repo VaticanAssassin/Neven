@@ -15,11 +15,17 @@ public class MozdaniValoviMozga implements java.io.Serializable
    @org.kie.api.definition.type.Label("Alpha")
    private java.lang.Integer alpha;
 
-   @org.kie.api.definition.type.Label(value = "Beta")
+   @org.kie.api.definition.type.Label("Beta")
    private java.lang.Integer beta;
 
-   @org.kie.api.definition.type.Label(value = "Gamma")
+   @org.kie.api.definition.type.Label("Gamma")
    private java.lang.Integer gamma;
+
+   @org.kie.api.definition.type.Label(value = "Delta")
+   private java.lang.Integer delta;
+
+   @org.kie.api.definition.type.Label(value = "Theta")
+   private java.lang.Integer theta;
 
    public MozdaniValoviMozga()
    {
@@ -65,13 +71,37 @@ public class MozdaniValoviMozga implements java.io.Serializable
       this.gamma = gamma;
    }
 
+   public java.lang.Integer getDelta()
+   {
+      return this.delta;
+   }
+
+   public void setDelta(java.lang.Integer delta)
+   {
+      this.delta = delta;
+   }
+
+   public java.lang.Integer getTheta()
+   {
+      return this.theta;
+   }
+
+   public void setTheta(java.lang.Integer theta)
+   {
+      this.theta = theta;
+   }
+
    public MozdaniValoviMozga(java.lang.Integer mozdaniValoviId,
-         java.lang.Integer alpha, java.lang.Integer beta, java.lang.Integer gamma)
+         java.lang.Integer alpha, java.lang.Integer beta,
+         java.lang.Integer gamma, java.lang.Integer delta,
+         java.lang.Integer theta)
    {
       this.mozdaniValoviId = mozdaniValoviId;
       this.alpha = alpha;
       this.beta = beta;
       this.gamma = gamma;
+      this.delta = delta;
+      this.theta = theta;
    }
 
 }
