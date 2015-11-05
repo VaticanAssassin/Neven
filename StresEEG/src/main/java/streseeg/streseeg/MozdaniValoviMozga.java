@@ -9,27 +9,20 @@ public class MozdaniValoviMozga implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label("Vrijednost vala")
-   private java.lang.Integer vrijednostVala;
-
    @org.kie.api.definition.type.Label("Mozdani valovi ID")
    private Integer mozdaniValoviId;
 
-   @org.kie.api.definition.type.Label(value = "Alpha")
+   @org.kie.api.definition.type.Label("Alpha")
    private java.lang.Integer alpha;
+
+   @org.kie.api.definition.type.Label(value = "Beta")
+   private java.lang.Integer beta;
+
+   @org.kie.api.definition.type.Label(value = "Gamma")
+   private java.lang.Integer gamma;
 
    public MozdaniValoviMozga()
    {
-   }
-
-   public java.lang.Integer getVrijednostVala()
-   {
-      return this.vrijednostVala;
-   }
-
-   public void setVrijednostVala(java.lang.Integer vrijednostVala)
-   {
-      this.vrijednostVala = vrijednostVala;
    }
 
    public java.lang.Integer getMozdaniValoviId()
@@ -52,12 +45,33 @@ public class MozdaniValoviMozga implements java.io.Serializable
       this.alpha = alpha;
    }
 
-   public MozdaniValoviMozga(java.lang.Integer vrijednostVala,
-         java.lang.Integer mozdaniValoviId, java.lang.Integer alpha)
+   public java.lang.Integer getBeta()
    {
-      this.vrijednostVala = vrijednostVala;
+      return this.beta;
+   }
+
+   public void setBeta(java.lang.Integer beta)
+   {
+      this.beta = beta;
+   }
+
+   public java.lang.Integer getGamma()
+   {
+      return this.gamma;
+   }
+
+   public void setGamma(java.lang.Integer gamma)
+   {
+      this.gamma = gamma;
+   }
+
+   public MozdaniValoviMozga(java.lang.Integer mozdaniValoviId,
+         java.lang.Integer alpha, java.lang.Integer beta, java.lang.Integer gamma)
+   {
       this.mozdaniValoviId = mozdaniValoviId;
       this.alpha = alpha;
+      this.beta = beta;
+      this.gamma = gamma;
    }
 
 }
