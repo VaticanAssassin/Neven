@@ -3,4 +3,5 @@
 <property name="name" value="UKLJUCIVANJESENZORA-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<dataHolder inputId="in_senzotInfoId" name="#E9E371" type="dataModelerEntry" outId="out_senzorinfoId" value="streseeg.streseeg.PotvrdaUkljucivanjaSenzora" id="senzorInfoId"/>
 </form>
