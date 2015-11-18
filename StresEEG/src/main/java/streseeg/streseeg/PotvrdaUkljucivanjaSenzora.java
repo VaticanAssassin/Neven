@@ -12,7 +12,7 @@ public class PotvrdaUkljucivanjaSenzora implements java.io.Serializable
    @org.kie.api.definition.type.Label("Senzor info ID")
    private java.lang.Integer senzorInfoId;
    @org.kie.api.definition.type.Label("Radi")
-   private String radi;
+   private Boolean radi;
 
    public PotvrdaUkljucivanjaSenzora()
    {
@@ -28,18 +28,18 @@ public class PotvrdaUkljucivanjaSenzora implements java.io.Serializable
       this.senzorInfoId = senzorInfoId;
    }
 
-   public java.lang.String getRadi()
+   public java.lang.Boolean getRadi()
    {
       return this.radi;
    }
 
-   public void setRadi(java.lang.String radi)
+   public void setRadi(java.lang.Boolean radi)
    {
       this.radi = radi;
    }
 
    public PotvrdaUkljucivanjaSenzora(java.lang.Integer senzorInfoId,
-         java.lang.String radi)
+         java.lang.Boolean radi)
    {
       this.senzorInfoId = senzorInfoId;
       this.radi = radi;
