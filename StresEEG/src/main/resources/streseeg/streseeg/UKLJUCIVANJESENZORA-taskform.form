@@ -3,4 +3,13 @@
 <property name="name" value="UKLJUCIVANJESENZORA-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="PotvrdaUkljucivanjaSenzoraId_radi" type="CheckBox" id="1713788361">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;radi (PotvrdaUkljucivanjaSenzoraId)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_potvrdaUkljucivanjaSenzora/radi"/>
+<property name="outputBinding" value="out_potvrdaUkljucivanjaSenzora/radi"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<dataHolder inputId="in_potvrdaUkljucivanjaSenzora" name="#B29FE4" type="dataModelerEntry" outId="out_potvrdaUkljucivanjaSenzora" value="streseeg.streseeg.PotvrdaUkljucivanjaSenzora" id="PotvrdaUkljucivanjaSenzoraId"/>
 </form>
