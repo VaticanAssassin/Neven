@@ -9,10 +9,10 @@ public class Ocitavanjevalova implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Ocitavanje valova ID")
+   @org.kie.api.definition.type.Label("Ocitavanje valova ID")
    private java.lang.Integer ocitavanjValovaId;
-   @org.kie.api.definition.type.Label(value = "Ocitanost ID")
-   private java.lang.Boolean ocitanostId;
+   @org.kie.api.definition.type.Label(value = "Ocitanost")
+   private java.lang.Boolean ocitanost;
 
    public Ocitavanjevalova()
    {
@@ -28,21 +28,21 @@ public class Ocitavanjevalova implements java.io.Serializable
       this.ocitavanjValovaId = ocitavanjValovaId;
    }
 
-   public java.lang.Boolean getOcitanostId()
+   public java.lang.Boolean getOcitanost()
    {
-      return this.ocitanostId;
+      return this.ocitanost;
    }
 
-   public void setOcitanostId(java.lang.Boolean ocitanostId)
+   public void setOcitanost(java.lang.Boolean ocitanost)
    {
-      this.ocitanostId = ocitanostId;
+      this.ocitanost = ocitanost;
    }
 
    public Ocitavanjevalova(java.lang.Integer ocitavanjValovaId,
-         java.lang.Boolean ocitanostId)
+         java.lang.Boolean ocitanost)
    {
       this.ocitavanjValovaId = ocitavanjValovaId;
-      this.ocitanostId = ocitanostId;
+      this.ocitanost = ocitanost;
    }
 
 }
