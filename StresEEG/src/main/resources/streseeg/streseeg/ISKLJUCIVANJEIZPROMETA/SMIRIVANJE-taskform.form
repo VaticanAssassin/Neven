@@ -3,5 +3,13 @@
 <property name="name" value="ISKLJUCIVANJEIZPROMETA/SMIRIVANJE-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="smirivanjeId_odluka" type="CheckBox" id="354665701">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;odluka (smirivanjeId)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="smirivanjeId/odluka"/>
+<property name="outputBinding" value="smirivanjeId/odluka"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
 <dataHolder inputId="smirivanjeId" name="#E9E371" type="dataModelerEntry" outId="smirivanjeId" value="streseeg.streseeg.Odluka" id="smirivanjeId"/>
 </form>
