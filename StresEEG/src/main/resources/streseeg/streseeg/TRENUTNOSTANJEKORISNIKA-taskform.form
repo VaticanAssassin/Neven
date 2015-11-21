@@ -3,4 +3,13 @@
 <property name="name" value="TRENUTNOSTANJEKORISNIKA-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="stanjeKorisnikaId_osjecaj" type="CheckBox" id="610536645">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;osjecaj (stanjeKorisnikaId)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_stanj/osjecaj"/>
+<property name="outputBinding" value="out_stanje/osjecaj"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<dataHolder inputId="in_stanj" name="#FF8881" type="dataModelerEntry" outId="out_stanje" value="streseeg.streseeg.StanjeKorisnika" id="stanjeKorisnikaId"/>
 </form>
