@@ -11,8 +11,11 @@ public class StanjeKorisnika implements java.io.Serializable
 
    @org.kie.api.definition.type.Label("Stanje korisnika ID")
    private Integer stanjeKorisnikaId;
-   @org.kie.api.definition.type.Label(value = "Mozdani valovi FK")
+   @org.kie.api.definition.type.Label("Mozdani valovi FK")
    private streseeg.streseeg.MozdaniValoviMozga mozdaniValovi_fk;
+
+   @org.kie.api.definition.type.Label(value = "Osjecaj")
+   private java.lang.Boolean osjecaj;
 
    public StanjeKorisnika()
    {
@@ -39,11 +42,23 @@ public class StanjeKorisnika implements java.io.Serializable
       this.mozdaniValovi_fk = mozdaniValovi_fk;
    }
 
+   public java.lang.Boolean getOsjecaj()
+   {
+      return this.osjecaj;
+   }
+
+   public void setOsjecaj(java.lang.Boolean osjecaj)
+   {
+      this.osjecaj = osjecaj;
+   }
+
    public StanjeKorisnika(java.lang.Integer stanjeKorisnikaId,
-         streseeg.streseeg.MozdaniValoviMozga mozdaniValovi_fk)
+         streseeg.streseeg.MozdaniValoviMozga mozdaniValovi_fk,
+         java.lang.Boolean osjecaj)
    {
       this.stanjeKorisnikaId = stanjeKorisnikaId;
       this.mozdaniValovi_fk = mozdaniValovi_fk;
+      this.osjecaj = osjecaj;
    }
 
 }
