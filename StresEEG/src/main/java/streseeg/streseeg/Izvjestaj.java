@@ -11,8 +11,11 @@ public class Izvjestaj implements java.io.Serializable
 
    @org.kie.api.definition.type.Label("Izvjestaj ID")
    private Integer izvjestajId;
-   @org.kie.api.definition.type.Label(value = "Stanje korisnika FK")
+   @org.kie.api.definition.type.Label("Stanje korisnika FK")
    private streseeg.streseeg.StanjeKorisnika stanjeKorisnika_fk;
+
+   @org.kie.api.definition.type.Label(value = "Osjecam se ID")
+   private java.lang.Boolean osjecamSeId;
 
    public Izvjestaj()
    {
@@ -39,11 +42,23 @@ public class Izvjestaj implements java.io.Serializable
       this.stanjeKorisnika_fk = stanjeKorisnika_fk;
    }
 
+   public java.lang.Boolean getOsjecamSeId()
+   {
+      return this.osjecamSeId;
+   }
+
+   public void setOsjecamSeId(java.lang.Boolean osjecamSeId)
+   {
+      this.osjecamSeId = osjecamSeId;
+   }
+
    public Izvjestaj(java.lang.Integer izvjestajId,
-         streseeg.streseeg.StanjeKorisnika stanjeKorisnika_fk)
+         streseeg.streseeg.StanjeKorisnika stanjeKorisnika_fk,
+         java.lang.Boolean osjecamSeId)
    {
       this.izvjestajId = izvjestajId;
       this.stanjeKorisnika_fk = stanjeKorisnika_fk;
+      this.osjecamSeId = osjecamSeId;
    }
 
 }
