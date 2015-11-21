@@ -3,4 +3,13 @@
 <property name="name" value="IZVJESTAJOTRENUTNOMSTANJU-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="izvjestajId_osjecamSeId" type="CheckBox" id="2050302387">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;osjecamSeId (izvjestajId)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_izvjestaj/osjecamSeId"/>
+<property name="outputBinding" value="out_izvjestaj/osjecamSeId"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<dataHolder inputId="in_izvjestaj" name="#B29FE4" type="dataModelerEntry" outId="out_izvjestaj" value="streseeg.streseeg.Izvjestaj" id="izvjestajId"/>
 </form>
