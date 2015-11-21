@@ -3,15 +3,13 @@
 <property name="name" value="NASTAVAKVOZNJE-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="0" name="odlukaId_odlukaid" type="InputTextInteger" id="687803954">
+<field position="0" name="nastavakVoznjeId_nastavakVoznjeId" type="InputTextInteger" id="90431105">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Odluka (odlukaId)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;enquot;,quot;nastavakVoznjeId (nastavakVoznjeId)quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="in_odluka/odlukaid"/>
-<property name="outputBinding" value="out_odluka/odlukaid"/>
+<property name="inputBinding" value="in_nastavakVoznje/nastavakVoznjeId"/>
+<property name="outputBinding" value="out_nastavakVoznje/nastavakVoznjeId"/>
 <property name="fieldClass" value="java.lang.Integer"/>
 </field>
-<dataHolder inputId="in_odluka" name="#A7E690" type="dataModelerEntry" outId="out_odluka" value="streseeg.streseeg.Odluka" id="odlukaId"/>
+<dataHolder inputId="in_nastavakVoznje" name="#A7E690" type="dataModelerEntry" outId="out_nastavakVoznje" value="streseeg.streseeg.NastavakVoznje" id="nastavakVoznjeId"/>
 </form>
