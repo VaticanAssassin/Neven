@@ -3,13 +3,13 @@
 <property name="name" value="OCITAVALIVALOVE-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="0" name="OcitavanjevalovaId_ocitanost" type="CheckBox" id="429393973">
+<field position="0" name="OcitavanjevalovaId_ocitanost_0" type="CheckBox" id="196353369">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;ocitanost (OcitavanjevalovaId)quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="in_ocitavanjeValova/ocitanost"/>
-<property name="outputBinding" value="out_ocitavanjeValova/ocitanost"/>
+<property name="inputBinding" value="MozdaniValoviMozga/ocitanost"/>
+<property name="outputBinding" value="Ocitavanjevalova/ocitanost"/>
 <property name="fieldClass" value="java.lang.Boolean"/>
 </field>
-<dataHolder inputId="in_ocitavanjeValova" name="#000000" type="dataModelerEntry" outId="out_ocitavanjeValova" value="streseeg.streseeg.Ocitavanjevalova" id="OcitavanjevalovaId"/>
+<dataHolder inputId="MozdaniValoviMozga" name="#B29FE4" type="dataModelerEntry" outId="Ocitavanjevalova" value="streseeg.streseeg.Ocitavanjevalova" id="OcitavanjevalovaId"/>
 </form>
