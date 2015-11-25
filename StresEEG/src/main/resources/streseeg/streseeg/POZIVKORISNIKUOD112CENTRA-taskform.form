@@ -13,13 +13,5 @@
 <property name="outputBinding" value="out_izvjestaj/izvjestajId"/>
 <property name="fieldClass" value="java.lang.Integer"/>
 </field>
-<field position="1" name="izvjestajId_osjecamSeId" type="CheckBox" id="484019740">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;osjecamSeId (izvjestajId)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="in_izvjestaj/osjecamSeId"/>
-<property name="outputBinding" value="out_izvjestaj/osjecamSeId"/>
-<property name="fieldClass" value="java.lang.Boolean"/>
-</field>
 <dataHolder inputId="in_izvjestaj" name="#FF8881" type="dataModelerEntry" outId="out_izvjestaj" value="streseeg.streseeg.Izvjestaj" id="izvjestajId"/>
 </form>
