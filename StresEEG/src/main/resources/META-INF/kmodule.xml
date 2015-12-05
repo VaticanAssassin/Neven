@@ -1,5 +1,20 @@
 <kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <kbase name="mykbase" default="true" eventProcessingMode="stream" equalsBehavior="identity">
-    <ksession name="myksession" type="stateful" default="true" clockType="realtime"/>
+    <ksession name="myksession" type="stateful" default="true" clockType="realtime">
+      <workItemHandlers>
+        <workItemHandler type="org.jugvale.jbpm.workitemhandler.InformacijaKorisnikuWorkItemHandler" name="InformacijaKorisnikuWorkItemHandler"/>
+        <workItemHandler type="org.jugvale.jbpm.workitemhandler.InformiranjeKorisnikaStanjuWorkItemHandler" name="InformiranjeKorisnikaStanjuWorkItemHandler"/>
+        <workItemHandler type="org.jugvale.jbpm.workitemhandler.IzmjeraMozdValovaWorkItemHandler" name="IzmjeraMozdValovaWorkItemHandler"/>
+        <workItemHandler type="org.jugvale.jbpm.workitemhandler.ObradaVrijednostiValaMozgaWorkItemHandler" name="ObradaVrijednostiValaMozgaWorkItemHandler"/>
+        <workItemHandler type="org.jugvale.jbpm.workitemhandler.OdlukaWorkItemHandler" name="OdlukaWorkItemHandler"/>
+        <workItemHandler type="org.jugvale.jbpm.workitemhandler.PohranaCloudWorkItemHandler" name="PohranaCloudWorkItemHandler"/>
+        <workItemHandler type="org.jugvale.jbpm.workitemhandler.PokusajPonovnoOcitatiWorkItemHandler" name="PokusajPonovnoOcitatiWorkItemHandler"/>
+        <workItemHandler type="org.jugvale.jbpm.workitemhandler.PovezivanjeWorkItemHandler" name="PovezivanjeWorkItemHandler"/>
+        <workItemHandler type="org.jugvale.jbpm.workitemhandler.PrepoznavanjeStanjaKorisnikaWorkItemHandler" name="PrepoznavanjeStanjaKorisnikaWorkItemHandler"/>
+        <workItemHandler type="org.jugvale.jbpm.workitemhandler.PrijevozDoBolniceWorkItemHandler" name="PrijevozDoBolniceWorkItemHandler"/>
+        <workItemHandler type="org.jugvale.jbpm.workitemhandler.PruzanjePrvePomociWorkItemHandler" name="PruzanjePrvePomociWorkItemHandler"/>
+        <workItemHandler type="org.jugvale.jbpm.workitemhandler.SlanjeGpsLokacijeWorkItemHandler" name="SlanjeGpsLokacijeWorkItemHandler"/>
+      </workItemHandlers>
+    </ksession>
   </kbase>
 </kmodule>
