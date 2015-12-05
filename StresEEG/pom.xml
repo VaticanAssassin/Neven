@@ -7,6 +7,13 @@
   <version>1.0</version>
   <name>StresEEG</name>
   <description>Izmjera mozdanih valova, te slanje na pametni uređaj korisnika u svrhu obrade podataka i determiniranju stanja u kojem se korisnik nalazi.</description>
+  <dependencies>
+    <dependency>
+      <groupId>org.jugvale.jbpm.workitemhandler</groupId>
+      <artifactId>hello-workitemhandler</artifactId>
+      <version>1.0</version>
+    </dependency>
+  </dependencies>
   <build>
     <plugins>
       <plugin>
