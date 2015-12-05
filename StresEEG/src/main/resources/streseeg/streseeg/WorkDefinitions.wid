@@ -9,7 +9,7 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
   ],
   [
    "name" : "InformiranjeKorisnikaStanjuWorkItemHandler",
-    "displayName" : "ODLUKA!",
+    "displayName" : "INFORMIRANJE KORISNIKA O STANJU!",
     "icon" : "defaultemailicon.gif"
   ],
   [
