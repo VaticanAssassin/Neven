@@ -2,6 +2,67 @@ import org.drools.core.process.core.datatype.impl.type.StringDataType;
 import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
 
 [
+    [
+   "name" : "InformacijaKorisnikuWorkItemHandler",
+    "displayName" : "INFORMACIJA KORISNIKU!",
+    "icon" : "defaultemailicon.gif"
+  ],
+  [
+   "name" : "InformiranjeKorisnikaStanjuWorkItemHandler",
+    "displayName" : "ODLUKA!",
+    "icon" : "defaultemailicon.gif"
+  ],
+  [
+   "name" : "IzmjeraMozdValovaWorkItemHandler",
+    "displayName" : "IZMJERA MOZDANIH VALOVA!",
+    "icon" : "defaultemailicon.gif"
+  ],
+  [
+   "name" : "ObradaVrijednostiValaMozgaWorkItemHandler",
+    "displayName" : "OBRADA VRIJEDNOSTI VALOVA MOZGA!",
+    "icon" : "defaultemailicon.gif"
+  ],
+  [
+   "name" : "OdlukaWorkItemHandler",
+    "displayName" : "ODLUKA!",
+    "icon" : "defaultemailicon.gif"
+  ],
+  [
+   "name" : "PohranaCloudWorkItemHandler",
+    "displayName" : "POHRANA U CLOUD!",
+    "icon" : "defaultemailicon.gif"
+  ],
+  [
+   "name" : "PokusajPonovnoOcitatiWorkItemHandler",
+    "displayName" : "POKUSAJ PONOVO OCITATI!",
+    "icon" : "defaultemailicon.gif"
+  ],
+  [
+   "name" : "PovezivanjeWorkItemHandler",
+    "displayName" : "POVEZIVANJE SENZORA I UREDAJA!",
+    "icon" : "defaultemailicon.gif"
+  ],
+  [
+   "name" : "PrepoznavanjeStanjaKorisnikaWorkItemHandler",
+    "displayName" : "PREPOZNAVANJE STANJA KORISNIKA!",
+    "icon" : "defaultemailicon.gif"
+  ],
+  [
+   "name" : "PrijevozDoBolniceWorkItemHandler",
+    "displayName" : "PRIJEVOZ U OBLIZNJU BOLINICU!",
+    "icon" : "defaultemailicon.gif"
+  ],
+  [
+   "name" : "PruzanjePrvePomociWorkItemHandler",
+    "displayName" : "PRUZANJE PRVE POMOCI KORISNIKU!",
+    "icon" : "defaultemailicon.gif"
+  ],
+  [
+   "name" : "SlanjeGpsLokacijeWorkItemHandler",
+    "displayName" : "SLANJE GPS LOKACIJE KORISNIKA!",
+    "icon" : "defaultemailicon.gif"
+  ],
+    
   [
     "name" : "Email",
     "parameters" : [
