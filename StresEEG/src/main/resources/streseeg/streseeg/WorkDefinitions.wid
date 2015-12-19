@@ -15,7 +15,10 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
   [
    "name" : "IzmjeraMozdValovaWorkItemHandler",
     "displayName" : "IZMJERA MOZDANIH VALOVA!",
-    "icon" : "defaultemailicon.gif"
+    "icon" : "defaultemailicon.gif",
+    "results":[
+        "MozdaniValoviMozga": new ObjectDataType("streseeg.streseeg")
+        ]
   ],
   [
    "name" : "ObradaVrijednostiValaMozgaWorkItemHandler",
