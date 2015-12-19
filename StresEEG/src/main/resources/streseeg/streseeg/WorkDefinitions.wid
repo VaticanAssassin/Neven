@@ -40,7 +40,10 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
   [
    "name" : "PovezivanjeWorkItemHandler",
     "displayName" : "POVEZIVANJE SENZORA I UREDAJA!",
-    "icon" : "defaultemailicon.gif"
+    "icon" : "defaultemailicon.gif",
+    "results":[
+        "Povezivanje": new ObjectDataType("streseeg.streseeg")
+        ]
   ],
   [
    "name" : "PrepoznavanjeStanjaKorisnikaWorkItemHandler",
