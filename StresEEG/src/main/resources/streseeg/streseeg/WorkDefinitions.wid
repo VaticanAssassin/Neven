@@ -17,7 +17,7 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     "displayName" : "IZMJERA MOZDANIH VALOVA!",
     "icon" : "defaultemailicon.gif",
     "results":[
-        "MozdaniValoviMozga": new ObjectDataType("streseeg.streseeg")
+        "MozdaniValoviMozga": new ObjectDataType("streseeg.streseeg.MozdaniValoviMozga")
         ]
   ],
   [
@@ -45,7 +45,7 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     "displayName" : "POVEZIVANJE SENZORA I UREDAJA!",
     "icon" : "defaultemailicon.gif",
     "results":[
-        "Povezivanje": new ObjectDataType("streseeg.streseeg")
+        "Povezivanje": new ObjectDataType("streseeg.streseeg.Povezivanje")
         ]
   ],
   [
